@@ -112,8 +112,8 @@ while ans:
       c=str(input('entrer votre chaine: '))
       print(crypter(c)) 
     elif ans=="2":
-      c=str(input('entrer votre chaine: '))
-      print(crypter(c)) 
+      c=int(input('entrer votre chaine: '))
+      print(decrypter(c)) 
     elif ans=="3":
       code2decode() 
     elif ans=="4":
