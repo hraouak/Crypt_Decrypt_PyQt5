@@ -14,22 +14,23 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setMinimumSize(QtCore.QSize(280, 280))
-        MainWindow.setMaximumSize(QtCore.QSize(280, 280))
+        MainWindow.resize(290, 280)
+        MainWindow.setMinimumSize(QtCore.QSize(290, 280))
+        MainWindow.setMaximumSize(QtCore.QSize(290, 280))
         MainWindow.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.layoutWidget.setGeometry(QtCore.QRect(30, 20, 227, 217))
-        self.layoutWidget.setObjectName("layoutWidget")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.layoutWidget)
+        self.widget = QtWidgets.QWidget(self.centralwidget)
+        self.widget.setGeometry(QtCore.QRect(30, 20, 227, 240))
+        self.widget.setObjectName("widget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label = QtWidgets.QLabel(self.layoutWidget)
+        self.label = QtWidgets.QLabel(self.widget)
         self.label.setStyleSheet("font-size:16px;")
         self.label.setObjectName("label")
-        self.verticalLayout.addWidget(self.label, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignVCenter)
-        self.cryptStr = QtWidgets.QPushButton(self.layoutWidget)
+        self.verticalLayout.addWidget(self.label, 0, QtCore.Qt.AlignHCenter)
+        self.cryptStr = QtWidgets.QPushButton(self.widget)
         self.cryptStr.setStyleSheet("border: none;\n"
 "padding: 10px;\n"
 "background-color: rgb(252, 175, 62);\n"
@@ -38,7 +39,7 @@ class Ui_MainWindow(object):
 "border-radius: 10px;")
         self.cryptStr.setObjectName("cryptStr")
         self.verticalLayout.addWidget(self.cryptStr)
-        self.decryptStr = QtWidgets.QPushButton(self.layoutWidget)
+        self.decryptStr = QtWidgets.QPushButton(self.widget)
         self.decryptStr.setStyleSheet("border: none;\n"
 "padding: 10px;\n"
 "background-color: rgb(138, 226, 52);\n"
@@ -47,7 +48,7 @@ class Ui_MainWindow(object):
 "border-radius: 10px;")
         self.decryptStr.setObjectName("decryptStr")
         self.verticalLayout.addWidget(self.decryptStr)
-        self.cryptFile = QtWidgets.QPushButton(self.layoutWidget)
+        self.cryptFile = QtWidgets.QPushButton(self.widget)
         self.cryptFile.setStyleSheet("background-color: #1fa3ec;\n"
 "border: none;\n"
 "padding: 10px;\n"
@@ -56,7 +57,7 @@ class Ui_MainWindow(object):
 "border-radius: 10px;")
         self.cryptFile.setObjectName("cryptFile")
         self.verticalLayout.addWidget(self.cryptFile)
-        self.decryptFile = QtWidgets.QPushButton(self.layoutWidget)
+        self.decryptFile = QtWidgets.QPushButton(self.widget)
         self.decryptFile.setStyleSheet("border: none;\n"
 "background-color: rgb(186, 189, 182);\n"
 "padding: 10px;\n"
@@ -65,9 +66,12 @@ class Ui_MainWindow(object):
 "border-radius: 10px;")
         self.decryptFile.setObjectName("decryptFile")
         self.verticalLayout.addWidget(self.decryptFile)
+        self.label_2 = QtWidgets.QLabel(self.widget)
+        self.label_2.setObjectName("label_2")
+        self.verticalLayout.addWidget(self.label_2, 0, QtCore.Qt.AlignHCenter)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 280, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 290, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -85,6 +89,7 @@ class Ui_MainWindow(object):
         self.decryptStr.setText(_translate("MainWindow", "Décrypter mot"))
         self.cryptFile.setText(_translate("MainWindow", "Crypter fichier texte"))
         self.decryptFile.setText(_translate("MainWindow", "Décrypter fichier texte"))
+        self.label_2.setText(_translate("MainWindow", "Made by haroun"))
 
 
 if __name__ == "__main__":

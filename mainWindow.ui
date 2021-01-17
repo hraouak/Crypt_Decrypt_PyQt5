@@ -2,15 +2,23 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>290</width>
+    <height>280</height>
+   </rect>
+  </property>
   <property name="minimumSize">
    <size>
-    <width>280</width>
+    <width>290</width>
     <height>280</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>280</width>
+    <width>290</width>
     <height>280</height>
    </size>
   </property>
@@ -21,17 +29,17 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>20</y>
       <width>227</width>
-      <height>217</height>
+      <height>240</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
-     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <item alignment="Qt::AlignHCenter">
       <widget class="QLabel" name="label">
        <property name="styleSheet">
         <string notr="true">font-size:16px;</string>
@@ -101,6 +109,13 @@ border-radius: 10px;</string>
        </property>
       </widget>
      </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Made by haroun</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
   </widget>
@@ -109,7 +124,7 @@ border-radius: 10px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>280</width>
+     <width>290</width>
      <height>22</height>
     </rect>
    </property>
