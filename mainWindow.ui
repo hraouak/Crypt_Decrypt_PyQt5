@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="minimumSize">
+   <size>
+    <width>280</width>
+    <height>280</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>280</width>
+    <height>280</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Cryptage Décryptage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>227</width>
+      <height>217</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font-size:16px;</string>
+       </property>
+       <property name="text">
+        <string>Veuillez choisir une option</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cryptStr">
+       <property name="styleSheet">
+        <string notr="true">border: none;
+padding: 10px;
+background-color: rgb(252, 175, 62);
+font-size: 16px;
+margin: 2px 20px;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Crypter mot</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="decryptStr">
+       <property name="styleSheet">
+        <string notr="true">border: none;
+padding: 10px;
+background-color: rgb(138, 226, 52);
+font-size: 16px;
+margin: 2px 20px;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Décrypter mot</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cryptFile">
+       <property name="styleSheet">
+        <string notr="true">background-color: #1fa3ec;
+border: none;
+padding: 10px;
+font-size: 16px;
+margin: 2px 20px;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Crypter fichier texte</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="decryptFile">
+       <property name="styleSheet">
+        <string notr="true">border: none;
+background-color: rgb(186, 189, 182);
+padding: 10px;
+font-size: 16px;
+margin: 2px 20px;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string>Décrypter fichier texte</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>280</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
